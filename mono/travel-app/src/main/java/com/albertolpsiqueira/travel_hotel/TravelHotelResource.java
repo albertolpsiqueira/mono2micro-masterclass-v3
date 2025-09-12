@@ -23,6 +23,12 @@ public class TravelHotelResource {
         return TravelHotel.findById(id);
     }
 
+    @GET
+    @Path("findByTravelOrderId")
+    public TravelHotel findByTravelOrderId(@QueryParam("travelOrderId") long id){
+        return TravelHotel.findByTraveOrderId(id);
+    }
+
     @POST
     @Transactional
     public TravelHotel newTravelHotel(TravelHotel travelHotel){

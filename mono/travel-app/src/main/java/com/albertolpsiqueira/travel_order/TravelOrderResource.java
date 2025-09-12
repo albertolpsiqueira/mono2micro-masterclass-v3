@@ -10,7 +10,7 @@ import java.util.List;
 @Path("travel-order")
 @Produces(MediaType.APPLICATION_JSON)
 @Consumes(MediaType.APPLICATION_JSON)
-public class TravalOrderResource {
+public class TravelOrderResource {
 
     @GET
     public List<TravelOrder> travelOrders(){
