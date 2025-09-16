@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="CompilerConfiguration">
+    <annotationProcessing>
+      <profile name="Maven default annotation processors profile" enabled="true">
+        <sourceOutputDir name="target/generated-sources/annotations" />
+        <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
+        <outputRelativeToContentRoot value="true" />
+        <module name="travel_hotel-app" />
+        <module name="travel_aggregator-app" />
+        <module name="travel_order-app" />
+        <module name="travel_flight-app" />
+      </profile>
+    </annotationProcessing>
+  </component>
+  <component name="JavacSettings">
+    <option name="ADDITIONAL_OPTIONS_OVERRIDE">
+      <module name="travel_aggregator-app" options="-parameters" />
+      <module name="travel_flight-app" options="-parameters" />
+      <module name="travel_hotel-app" options="-parameters" />
+      <module name="travel_order-app" options="-parameters" />
+    </option>
+  </component>
+</project>
