@@ -1,5 +1,6 @@
 package com.albertolpsiqueira.travel_order;
 
+import io.smallrye.common.annotation.RunOnVirtualThread;
 import jakarta.transaction.Transactional;
 import jakarta.ws.rs.*;
 import jakarta.ws.rs.core.MediaType;
@@ -10,6 +11,7 @@ import java.util.List;
 @Path("travel-order")
 @Produces(MediaType.APPLICATION_JSON)
 @Consumes(MediaType.APPLICATION_JSON)
+@RunOnVirtualThread
 public class TravelOrderResource {
 
     @GET
